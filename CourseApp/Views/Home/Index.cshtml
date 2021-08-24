@@ -2,11 +2,22 @@
 <head>
     <title> Home</title>
     <link href="/modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
 </head> 
 <body>
-    <p>  @ViewBag.Greeting @ViewBag.Username,Nasılsın ?  </p>
-    <a asp-action="apply" asp-controller="course">Başvuru Yap  </a>
 
-   home/index/viev
+
+    <div class="container m-4">
+        <div class="card mx-auto" style="width:500px;">
+            <div class="card-header">
+                <p>  @ViewBag.Greeting @ViewBag.Username,Nasılsın ?  </p> 
+            </div>
+            <div class="card-body">
+                <p class="card-text">    Umarım kurslarımızdan memnunsunuzdur... </p>
+                <a asp-action="apply" asp-controller="course">Başvuru Yap  </a>
+            </div>
+        </div>
+    </div>
+      
 </body>
 </html>

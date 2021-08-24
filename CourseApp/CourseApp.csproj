@@ -201,4 +201,9 @@
     <None Include="node_modules\bootstrap\scss\_variables.scss" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
 </Project>

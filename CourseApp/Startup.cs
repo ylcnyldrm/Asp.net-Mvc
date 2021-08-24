@@ -39,6 +39,8 @@ namespace CourseApp
                     Path.Combine(Directory.GetCurrentDirectory(),"node_modules")), RequestPath = "/modules"
             });
              
+
+            //burada sayfa yönlendirmesi yapýyoruz
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

@@ -2,33 +2,43 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <link href="/modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
     <title>COUSE</title>
 </head>
 <body>
-    couse/list/viev
 
-   
-    <table>
-        <thead>
-            <tr>
-                <td>Name</td>
-                <td>Email</td>
-                <td>Confirm</td>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var student in Model)
-            {
-                <tr>
-                    <td>@student.Name</td>
-                    <td>@student.Email</td>
-                    <td>@student.Phone</td>
-                    <td>@student.Confirm</td> 
-                </tr>
-            }}
+    <div class="container m-4">
+        <div class="card mx-auto" style="width:500px;">
+            <div class="card-header">
+                Kursa Katılanlar 
+            </div>
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Email</td>
+                                <td>Confirm</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var student in Model)
+                            {
+                                <tr>
+                                    <td>@student.Name</td>
+                                    <td>@student.Email</td>
+                                    <td>@student.Phone</td>
+                                    <td>@student.Confirm</td>
+                                </tr>
+                            }
 
-        </tbody>
-    </table>
+                        </tbody>
+                    </table>
+        </div>
+    </div>
+
+
+  
 
 </body>
 </html>
