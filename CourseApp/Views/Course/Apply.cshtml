@@ -6,7 +6,8 @@
 </head>
 <body>
      
-    <form asp-action="apply">
+    <form asp-action="apply" method="POST">
+        <div asp-validation-summary="All"> </div>
 
         <p>
             <label asp-for="Name" >Adınız</label>
@@ -23,12 +24,14 @@
         <p>
             <label  asp-for="Confirm" >Kursa Katılacak mısınız ?</label>
             <select asp-for="Confirm">
+                <option value=""> Seçiniz </option>
                 <option value="true">Evet, geliyorum</option>
                 <option value="false">Hayır, Katılmyorum</option>
             </select>
 
         </p>
         <input type="submit" name="Submit" />
+
 
     </form>
 </body>

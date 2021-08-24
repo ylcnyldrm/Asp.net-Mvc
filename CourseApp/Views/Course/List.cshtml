@@ -1,8 +1,34 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
+﻿@model IEnumerable<Student>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>COUSE</title>
 </head>
 <body>
     couse/list/viev
+
+   
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Confirm</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.Name</td>
+                    <td>@student.Email</td>
+                    <td>@student.Phone</td>
+                    <td>@student.Confirm</td> 
+                </tr>
+            }}
+
+        </tbody>
+    </table>
+
 </body>
 </html>

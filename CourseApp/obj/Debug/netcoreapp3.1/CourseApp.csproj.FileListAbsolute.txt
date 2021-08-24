@@ -6,7 +6,6 @@ C:\Users\Aranel\source\repos\CourseApp\CourseApp\bin\Debug\netcoreapp3.1\CourseA
 C:\Users\Aranel\source\repos\CourseApp\CourseApp\bin\Debug\netcoreapp3.1\CourseApp.runtimeconfig.dev.json
 C:\Users\Aranel\source\repos\CourseApp\CourseApp\bin\Debug\netcoreapp3.1\CourseApp.dll
 C:\Users\Aranel\source\repos\CourseApp\CourseApp\bin\Debug\netcoreapp3.1\CourseApp.pdb
-C:\Users\Aranel\source\repos\CourseApp\CourseApp\obj\Debug\netcoreapp3.1\CourseApp.csproj.AssemblyReference.cache
 C:\Users\Aranel\source\repos\CourseApp\CourseApp\obj\Debug\netcoreapp3.1\CourseApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Aranel\source\repos\CourseApp\CourseApp\obj\Debug\netcoreapp3.1\CourseApp.AssemblyInfoInputs.cache
 C:\Users\Aranel\source\repos\CourseApp\CourseApp\obj\Debug\netcoreapp3.1\CourseApp.AssemblyInfo.cs
@@ -36,3 +35,5 @@ C:\Users\Aranel\source\repos\CourseApp\CourseApp\obj\Debug\netcoreapp3.1\Razor\V
 C:\Users\Aranel\source\repos\CourseApp\CourseApp\obj\Debug\netcoreapp3.1\Razor\Views\Course\Details.cshtml.g.cs
 C:\Users\Aranel\source\repos\CourseApp\CourseApp\obj\Debug\netcoreapp3.1\Razor\Views\Course\Apply.cshtml.g.cs
 C:\Users\Aranel\source\repos\CourseApp\CourseApp\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Aranel\source\repos\CourseApp\CourseApp\obj\Debug\netcoreapp3.1\Razor\Views\Course\Thanks.cshtml.g.cs
+C:\Users\Aranel\source\repos\CourseApp\CourseApp\obj\Debug\netcoreapp3.1\CourseApp.csproj.AssemblyReference.cache

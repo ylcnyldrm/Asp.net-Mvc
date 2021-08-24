@@ -1,0 +1,33 @@
+﻿@model Student
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>THANKS</title>
+</head>
+<body>
+
+    <h2> Merhaba =  @Model.Name  </h2>
+    <hr />
+    @if (Model.Confirm == true)
+    {
+        <span>
+            Kursa katılmış oluğunuzdan dolayı mutlu olduk.
+        </span>
+        <div> 
+            Diğer katılımcıları <a asp-action="List"> görüntüle.  </a>
+        </div>
+      
+    }
+
+    else
+
+    {
+        <span>   Üzüldük. Umarım fikriniz değişir.</span>
+
+    }
+
+
+
+</body>
+</html>
