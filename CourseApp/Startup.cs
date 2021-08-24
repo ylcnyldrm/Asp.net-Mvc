@@ -2,12 +2,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using System.IO;
 namespace CourseApp
 {
     public class Startup
@@ -29,6 +30,14 @@ namespace CourseApp
             }
 
             app.UseRouting();
+
+            //Klasörü dýþarý açmak için
+            app.UseStaticFiles(); //wwwroot klasörü dýþarýya açýlýr
+            app.UseStaticFiles(new StaticFileOptions 
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(),"node_modules")), RequestPath = "/modules"
+            });
              
             app.UseEndpoints(endpoints =>
             {
