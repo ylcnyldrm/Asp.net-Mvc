@@ -3,15 +3,49 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CourseApp.Models;
+using CourseApp.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 namespace CourseApp.Controllers
 {
     public class CourseController : Controller
     {
-        public IActionResult Index() 
-        {
-            //http://localhost:5000/course/index =>course/index.cs
-            return View();
+        //controllerden view'lere veri gönermek örneği (Viewdata,Viewbag,Model)
+        //http://localhost:5000/course/index =>course/index.cs 
+
+        //public IActionResult Index() 
+        //{
+        //    Course course = new Course();
+
+        //    course.Name = "Asp.Net Mvc Kursu";
+        //    course.Desciription = "Şuana kadar fena değil";
+        //    course.isPublished = true;
+        //    //verilerimizi course parametresiyle Viewdata ile gönderdik.
+        //    //ViewData["course"] = course;
+
+        //    //ViewBag.course = course;
+        //    //ViewBag.count = 10; 
+        //    return View(course);
+        //}
+        public IActionResult Index() {
+
+            CourseInformation courseInformation = new CourseInformation() { Id=1,Name="Uygulamalı web geliştirme kursu"};
+            List<Student> students = new List<Student>() {
+             new Student() { Name = "ahmet" },
+             new Student() { Name = "hasan" },
+           };
+            var viewModel = new CourseStudentsViewModel();
+            viewModel.Course = courseInformation;
+            viewModel.students = students;
+            return View(viewModel);
+        }
+
+
+        public ActionResult Byreleased(int year,int month )
+          {
+            if (year==0 && month==0) {
+                return Content("ay ve yıl alanları boş geldi");
+            }
+            return Content("year "+year+ "month"+month);
         }
 
         //http://localhost:5000/course/apply =>course/apply.cs
@@ -23,7 +57,7 @@ namespace CourseApp.Controllers
         }
         //kullancı submit butonuna tıkladıgında form ilgili adrese gidecek
         [HttpPost]
-        public IActionResult Apply(Student student)
+        public IActionResult Apply(StudentResponse student)
         {
             /*
               ModelState gelen modelin içerisindeki kurallara bakar ve kurallar doğru uygulanmışsa 

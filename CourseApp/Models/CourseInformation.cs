@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace CourseApp.Models
 {
-    public class Student
+    public class CourseInformation
     {
-        public string Id   { get; set; }
         public string Name { get; set; }
+        public int Id { get; set; }
     }
 }

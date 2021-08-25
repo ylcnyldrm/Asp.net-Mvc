@@ -19,8 +19,15 @@ using CourseApp.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\Aranel\source\repos\CourseApp\CourseApp\Views\_ViewImports.cshtml"
+using CourseApp.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c4e90a716a9d566c45358c7ed32890de3412b38c", @"/Views/Course/Details.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a06389812bf63bc3821b2db2f67ab6d15ce7f56e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"67e5efb0034bed4b387675108a06e15e1957d2ec", @"/Views/_ViewImports.cshtml")]
     public class Views_Course_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Course>
     {
         #line hidden
@@ -49,7 +56,7 @@ using CourseApp.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4e90a716a9d566c45358c7ed32890de3412b38c3091", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4e90a716a9d566c45358c7ed32890de3412b38c3275", async() => {
                 WriteLiteral("\r\n    <title>  DETAILS </title>\r\n");
             }
             );
@@ -63,7 +70,7 @@ using CourseApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4e90a716a9d566c45358c7ed32890de3412b38c4090", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4e90a716a9d566c45358c7ed32890de3412b38c4274", async() => {
                 WriteLiteral("\r\n    couse/details/viev\r\n\r\n    <p> name: ");
 #nullable restore
 #line 11 "C:\Users\Aranel\source\repos\CourseApp\CourseApp\Views\Course\Details.cshtml"

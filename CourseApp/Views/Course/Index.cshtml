@@ -1,8 +1,30 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
+﻿@model CourseStudentsViewModel  
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <title>COUSE</title>
 </head>
 <body>
-    couse/index/viev
+
+
+    @*<h1> Viewbag ile getirilen isim = @( ((Course)ViewBag.course).Name) </h1>
+    <h1> Viewbag ile getirilen değer  = @ViewBag.count </h1>
+
+
+    <h1> Kurs adı = @(((Course)ViewData["course"]).Name)   </h1>
+    <h1> Kurs acıklaması = @(((Course)ViewData["course"]).Desciription)   </h1>
+    <h1> Kurs acıklaması = @(((Course)ViewData["course"]).isPublished)   </h1>*@
+
+    <h1> model ile getirilen isim @Model.Course.Name</h1>
+    <h1> model ile getirilen Id @Model.Course.Id</h1>
+
+    @foreach (var item in Model.students)
+    {
+        <h1>   model ile getirilen isim @item.Name</h1>
+    }
+
+
+
 </body>
 </html>

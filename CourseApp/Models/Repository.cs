@@ -7,8 +7,8 @@ namespace CourseApp.Models
 {
     public static class Repository
     {
-        private static List<Student> _students = new List<Student>();
-        public static List<Student> Student
+        private static List<StudentResponse> _students = new List<StudentResponse>();
+        public static List<StudentResponse> Student
         {
             get {
 
@@ -16,7 +16,7 @@ namespace CourseApp.Models
             }
         }
 
-        public static void addStudent(Student student) 
+        public static void addStudent(StudentResponse student) 
         {
             _students.Add(student);
                 }

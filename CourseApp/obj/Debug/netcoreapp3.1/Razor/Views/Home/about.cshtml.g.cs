@@ -19,8 +19,15 @@ using CourseApp.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\Aranel\source\repos\CourseApp\CourseApp\Views\_ViewImports.cshtml"
+using CourseApp.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6f9d06f314c1cb82993cb1fe8467f3f46a5bd857", @"/Views/Home/about.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a06389812bf63bc3821b2db2f67ab6d15ce7f56e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"67e5efb0034bed4b387675108a06e15e1957d2ec", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_about : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -49,7 +56,7 @@ using CourseApp.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f9d06f314c1cb82993cb1fe8467f3f46a5bd8573064", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f9d06f314c1cb82993cb1fe8467f3f46a5bd8573248", async() => {
                 WriteLiteral("\r\n    <title> Home</title>\r\n");
             }
             );
@@ -63,7 +70,7 @@ using CourseApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f9d06f314c1cb82993cb1fe8467f3f46a5bd8574058", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f9d06f314c1cb82993cb1fe8467f3f46a5bd8574242", async() => {
                 WriteLiteral("\r\n   home/about/viev\r\n");
             }
             );

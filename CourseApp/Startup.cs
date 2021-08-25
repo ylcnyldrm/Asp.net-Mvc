@@ -33,22 +33,36 @@ namespace CourseApp
 
             //Klasörü dýþarý açmak için
             app.UseStaticFiles(); //wwwroot klasörü dýþarýya açýlýr
-            app.UseStaticFiles(new StaticFileOptions 
+            app.UseStaticFiles(new StaticFileOptions
             {
                 FileProvider = new PhysicalFileProvider(
-                    Path.Combine(Directory.GetCurrentDirectory(),"node_modules")), RequestPath = "/modules"
+                    Path.Combine(Directory.GetCurrentDirectory(), "node_modules")), RequestPath = "/modules"
             });
 
 
             //burada sayfa yönlendirmesi yapýyoruz
- 
+
+            
+            //burda isteðe baðlý olarak controllerlara sýrayla bakýlýr 
+            //eðer istenilen controller yoksa en sonda varsayýlan controller uygulanýr.
             app.UseEndpoints(endpoints =>
             {
+                
                 endpoints.MapControllerRoute(
                     name: "default",
                     // action = controller içindeki her bir metoda veriðimiz isim
                     // id? = Soru iþareti isteðe baðlý olarak kullanýlacaðýný belirtir. 
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}"); 
+                
+                //url yolu course released year ve ay þeklinde olmasý lazým year ve month da ? olsaydý
+                // year ve month alanlarýný doldurmaya gerek kalmayacaktý.
+                endpoints.MapControllerRoute( 
+                    name: "CoursesByReleased",  
+                    pattern: "course/released/{year?}/{month?}",
+                    new { controller ="Course",action="Byreleased"},
+                    new { year=@"\d{4}",month=@"\d{2}"}
+                    );
+                   
             });
         }
     }

@@ -19,8 +19,15 @@ using CourseApp.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\Aranel\source\repos\CourseApp\CourseApp\Views\_ViewImports.cshtml"
+using CourseApp.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d2d081c23940b356f5206f13093ae3170c7e8f36", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a06389812bf63bc3821b2db2f67ab6d15ce7f56e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"67e5efb0034bed4b387675108a06e15e1957d2ec", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/css/style.css"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -55,9 +62,9 @@ using CourseApp.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2d081c23940b356f5206f13093ae3170c7e8f364661", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2d081c23940b356f5206f13093ae3170c7e8f364845", async() => {
                 WriteLiteral("\r\n    <title> Home</title>\r\n    <link href=\"/modules/bootstrap/dist/css/bootstrap.min.css\" rel=\"stylesheet\" />\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d2d081c23940b356f5206f13093ae3170c7e8f365041", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d2d081c23940b356f5206f13093ae3170c7e8f365225", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -84,7 +91,7 @@ using CourseApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" \r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2d081c23940b356f5206f13093ae3170c7e8f366924", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2d081c23940b356f5206f13093ae3170c7e8f367108", async() => {
                 WriteLiteral("\r\n\r\n\r\n    <div class=\"container m-4\">\r\n        <div class=\"card mx-auto\" style=\"width:500px;\">\r\n            <div class=\"card-header\">\r\n                <p>  ");
 #nullable restore
 #line 13 "C:\Users\Aranel\source\repos\CourseApp\CourseApp\Views\Home\Index.cshtml"
@@ -102,7 +109,7 @@ using CourseApp.Models;
 #line hidden
 #nullable disable
                 WriteLiteral(",Nasılsın ?  </p> \r\n            </div>\r\n            <div class=\"card-body\">\r\n                <p class=\"card-text\">    Umarım kurslarımızdan memnunsunuzdur... </p>\r\n                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2d081c23940b356f5206f13093ae3170c7e8f368027", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2d081c23940b356f5206f13093ae3170c7e8f368211", async() => {
                     WriteLiteral("Başvuru Yap  ");
                 }
                 );
