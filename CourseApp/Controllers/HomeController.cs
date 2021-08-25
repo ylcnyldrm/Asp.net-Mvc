@@ -18,10 +18,35 @@ namespace CourseApp.Controllers
          // varsayılan olarak home ve ındex atandğımdan => localhost:5000/home/index =>home/index.cs
             return View();
         }
-        public IActionResult About()
+        /*
+         //Course/Details/2 : route bağlı 
+         //Course/Details?id=2 routa bağlı değil istediğimiz kadar parametre verebiliriz
+         
+        Metoda paramet olarak gelen değer adı pattern'deki isimle aynı olmak zorundadır.
+        public ActionResult About(string id)
         {
-            //localhost:5000/home/about =>home/about.cs
-            return View();
+            localhost:5000/home/about =>home/about.cs 
+            return Content("gelen deger = "+id);
+        } 
+         */
+
+
+
+        /*
+         Bu kısım string query olarak geçer route'den bağımsızdır
+         parametrelere verdiğin değerleri url kısmında belirmen gerek
+         örnek : 
+         home/about?id=10&ad=yalçın&soyad=yıldırım
+         çıktısı : Ad =yalçınSoyad =yıldırımNumara =10
+
+         public ActionResult About (int id, string ad,string soyad) {
+            return Content("Ad ="+ad+"Soyad ="+soyad+"Numara ="+id);
+        }
+         
+         */
+        public ActionResult About(int id, string ad, string soyad)
+        {
+            return Content("Ad =" + ad + "Soyad =" + soyad + "Numara =" + id);
         }
     }
 }

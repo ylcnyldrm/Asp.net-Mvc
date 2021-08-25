@@ -38,14 +38,16 @@ namespace CourseApp
                 FileProvider = new PhysicalFileProvider(
                     Path.Combine(Directory.GetCurrentDirectory(),"node_modules")), RequestPath = "/modules"
             });
-             
+
 
             //burada sayfa yönlendirmesi yapýyoruz
+ 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    //                            controller içindeki her bir metoda veriðimiz isim     
+                    // action = controller içindeki her bir metoda veriðimiz isim
+                    // id? = Soru iþareti isteðe baðlý olarak kullanýlacaðýný belirtir. 
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
