@@ -1,28 +1,53 @@
 ﻿@model CourseStudentsViewModel  
  
+
+@*  
+yorum satırı     
+*@
+@{ 
+    //eğer öğrencilerin sayısı 2 den büyük ve eşitse popüler sınfını uygula 
+    var classname = Model.Students.Count >= 2 ? "popular" : null;
+}
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <title>COUSE</title>
+
+    <style>    .populer {
+   color:green;
+   font-weight:700;
+          
+    }
+    </style>
 </head>
 <body>
 
 
     @*<h1> Viewbag ile getirilen isim = @( ((Course)ViewBag.course).Name) </h1>
-    <h1> Viewbag ile getirilen değer  = @ViewBag.count </h1>
+        <h1> Viewbag ile getirilen değer  = @ViewBag.count </h1>
 
 
-    <h1> Kurs adı = @(((Course)ViewData["course"]).Name)   </h1>
-    <h1> Kurs acıklaması = @(((Course)ViewData["course"]).Desciription)   </h1>
-    <h1> Kurs acıklaması = @(((Course)ViewData["course"]).isPublished)   </h1>*@
+        <h1> Kurs adı = @(((Course)ViewData["course"]).Name)   </h1>
+        <h1> Kurs acıklaması = @(((Course)ViewData["course"]).Desciription)   </h1>
+        <h1> Kurs acıklaması = @(((Course)ViewData["course"]).isPublished)   </h1>*@
 
-    <h1> model ile getirilen isim @Model.Course.Name</h1>
+
+    <h1 class="populer"> model ile getirilen isim @Model.Course.Name</h1>
     <h1> model ile getirilen Id @Model.Course.Id</h1>
 
-    @foreach (var item in Model.students)
+    @if(Model.Students.Count == 0)
+    {
+        <text> Kursa katılımcı yok.  </text>
+    }
+    else {
+
+    @foreach (var item in Model.Students)
     {
         <h1>   model ile getirilen isim @item.Name</h1>
     }
+
+    }
+
 
 
 

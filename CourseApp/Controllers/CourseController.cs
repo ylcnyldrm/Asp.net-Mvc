@@ -35,7 +35,7 @@ namespace CourseApp.Controllers
            };
             var viewModel = new CourseStudentsViewModel();
             viewModel.Course = courseInformation;
-            viewModel.students = students;
+            viewModel.Students = students;
             return View(viewModel);
         }
 

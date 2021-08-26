@@ -1,0 +1,14 @@
+﻿
+@model IEnumerable<Category>
+<div id="menu">
+    <ul>
+        @*Aşşağıya yazdığımız model Category modelini temsil eder.*@
+        @foreach (var category in Model)
+        {
+            <li>
+                <a href="/">@category.Name</a>
+            </li>
+        }
+
+    </ul>
+</div>

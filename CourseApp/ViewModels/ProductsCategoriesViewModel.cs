@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CourseApp.ViewModels
 {
-    public class CourseStudentsViewModel
+    public class ProductsCategoriesViewModel
     {
-        public CourseInformation Course { get; set; }
-        public List<Student> Students { get; set; }
-    }
+        public List<Category> Categories { get; set; }
+        public List<Product> Products { get; set; }
+     }
 }

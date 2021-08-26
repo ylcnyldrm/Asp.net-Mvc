@@ -1,0 +1,32 @@
+﻿@*@model ProductsCategoriesViewModel
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        About
+    </title>
+
+    <style>
+        #header {
+            width:900px;
+            height:100px;
+            border-radius:20px;
+            background:blue;
+            paddin:20px;
+            margin-bottom:10px;
+        }
+        </style>
+</head>
+<body>
+
+    <div id="header"> Header </div>
+@Html.Partial("_Menu",Model.Categories)
+@await Component.InvokeAsync("Menu")
+
+    <div id="content"> HAKKINDA</div>
+</body>
+</html>*@
+
+ 
+
+HAKKIMIZDA
